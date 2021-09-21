@@ -15,3 +15,5 @@ Hola estoy practicando en el documento
 Buenas noches 
 >>>>>>> 782f5ed6bc733db56612ce503a203718eb53b354
 >>>>>>> 4267f66b4baecdff4551cad1e47cf76d159729bb
+
+Cambio 2
