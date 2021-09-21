@@ -5,5 +5,9 @@ Mi nombre  es  Sofia Botero pavas
 Mi nombre es Sebastián Agudelo Herrera
 Mi nombre es Sofia Quimbay y modiqué archivo
 Hola 
+<<<<<<< HEAD
 
 Hola estoy practicando en el documento
+=======
+Buenas noches 
+>>>>>>> 782f5ed6bc733db56612ce503a203718eb53b354
