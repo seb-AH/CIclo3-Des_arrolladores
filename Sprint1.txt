@@ -3,4 +3,15 @@ Mi nombre es Jorge Martinez y edito archivo
 Mi nombre es David y edité el archivo 
 Mi nombre  es  Sofia Botero pavas
 Mi nombre es Sebastián Agudelo Herrera
+<<<<<<< HEAD
 Hola prueba
+=======
+Mi nombre es Sofia Quimbay y modiqué archivo
+Hola 
+<<<<<<< HEAD
+
+Hola estoy practicando en el documento
+=======
+Buenas noches 
+>>>>>>> 782f5ed6bc733db56612ce503a203718eb53b354
+>>>>>>> 4267f66b4baecdff4551cad1e47cf76d159729bb
