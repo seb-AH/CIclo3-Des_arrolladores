@@ -11,12 +11,4 @@ Buenas noches
 David 8:03 Cambio 
 Buenas noches 
 Cambio 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 782f5ed6bc733db56612ce503a203718eb53b354
->>>>>>> 4267f66b4baecdff4551cad1e47cf76d159729bb
-
->>>>>>> 92dc5136f229b0e597bf663493fefa159258773a
+Hola estoy probando 
