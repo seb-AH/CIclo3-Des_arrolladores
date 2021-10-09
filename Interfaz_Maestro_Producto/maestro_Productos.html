@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        Maestro de productos
+         </title>
+         <link rel="stylesheet" type="text/css" href="C:\Users\USUARIO\Documents\proyecto\CIclo3-Des_arrolladores\Interfaz_Maestro_Producto\estilo_Maestro_Producto.css">    
+         <link href='https://unpkg/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section title="MenuHamburguesa">
+
+        <div class="sidebar">
+          <div class="logo-details">
+            <i class='bx bxs-home'></i>
+              <div class="logo_name">Inicio</div>
+              <i class='bx bx-menu' id="btn" ></i>
+          </div>
+          <ul class="nav-list">
+            <li>
+                <i class='bx bx-search' ></i>
+               <input type="text" placeholder="Buscar">
+               <span class="tooltip">Buscar</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bxl-shopify' ></i>
+                <span class="links_name">Maestro Productos</span>
+              </a>
+               <span class="tooltip">Maestro Productos</span>
+            </li>
+            <li>
+             <a href="#">
+              <i class='bx bxs-store-alt' ></i>
+               <span class="links_name">Maestro Ventas</span>
+             </a>
+             <span class="tooltip">Maestro Ventas</span>
+           </li>
+           <li>
+            <a href="#">
+              <i class='bx bxs-basket'></i>
+              <span class="links_name">Registrar Venta</span>
+            </a>
+            <span class="tooltip">Registrar Venta</span>
+          </li>
+           <li>
+             <a href="#">
+              <i class='bx bxs-user-detail'></i>
+               <span class="links_name">Gestion de Usuarios</span>
+             </a>
+             <span class="tooltip">Gestion de Usuarios</span>
+           </li>
+          
+           <li class="profile">
+               <div class="profile-details">
+                 <img src="profile.jpg" alt="profileImg">
+                 <div class="name_job">
+                   <div class="name">Des-Arrolladores</div>
+                   <div class="job">MisionTIC</div>
+                 </div>
+               </div>
+               <i class='bx bx-log-out' id="log_out" ></i>
+           </li>
+          </ul>
+        </div>
+      
+    </section>
+    
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+    
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+    
+        searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+              sidebar.classList.toggle("open");
+              menuBtnChange(); //calling the function(optional)
+        });
+    
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if(sidebar.classList.contains("open")){
+              closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+              }
+            }
+        </script>
+ <section class="cuerpo"> 
+    <div class="contenido">
+    <h1 class="titulo">Bienvenido al maestro de productos </h1>
+    <a class="boton"> Listar productos </a> 
+    <input class="forma" id="myInput" type="text" placeholder="Que producto buscas?">
+    <a class="boton1"> Modificar  producto </a>
+  </div>
+  <br> <br>
+  <br>
+
+  <div class="tabla">
+  <table class="table">
+      <table border="1"> 
+    <thead> 
+      <tr>
+        <th>Id producto</th>
+        <th>Descripcion</th>
+        <th>Valor unitario</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td bgcolor="darkcyan">12345 </td>
+        <td bgcolor="darkcyan">peso</td>
+        <td bgcolor="darkcyan">1000</td>
+        <td bgcolor="darkcyan">Disponible</td>
+      </tr>
+      <tr>
+        <td bgcolor="darkcyan">678</td>
+        <td bgcolor="darkcyan">peso</td>
+        <td bgcolor="darkcyan">2000</td>
+        <td bgcolor="darkcyan">No disponible</td>
+      </tr>
+   
+    </tbody>
+  </table>
+</div>
+</section>
+</body>
+</html>
