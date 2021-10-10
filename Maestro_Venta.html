@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu-->
+    <link rel="stylesheet" href="estilo_Maestro_Venta.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Ventana de Maestro de Ventas">
+     <meta name="autor" content="ODAvidF">
+     <title>Maestro de Ventas</title>
+   </head>
+<body>
+
+  <header id="TituloPagina">
+    <div>
+        <h1 id="tituloMaestroVenta" title="Interfaz Maestro Ventas">Maestro de Ventas</h1>
+    </div>
+   </header>
+
+
+  <section>
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+      <i class='bx bxs-home icon'></i>
+        <div class="logo_name">Des-Arroladores</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Buscar">
+         <span class="tooltip">Buscar</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxl-shopify' ></i>
+          <span class="links_name">Maestro Productos</span>
+        </a>
+         <span class="tooltip">Maestro Productos</span>
+      </li>
+      <li>
+       <a href="#">
+        <i class='bx bxs-store-alt' ></i>
+         <span class="links_name">Maestro Ventas</span>
+       </a>
+       <span class="tooltip">Maestro Ventas</span>
+     </li>
+     <li>
+      <a href="#">
+        <i class='bx bxs-basket'></i>
+        <span class="links_name">Registrar Venta</span>
+      </a>
+      <span class="tooltip">Registrar Venta</span>
+    </li>
+     <li>
+       <a href="#">
+        <i class='bx bxs-user-detail'></i>
+         <span class="links_name">Gestion de Usuarios</span>
+       </a>
+       <span class="tooltip">Gestion de Usuarios</span>
+     </li>
+        <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Des-Arrolladores</div>
+             <div class="job">MisionTIC</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+  </section>
+
+  <section class="home-section">
+      <div class="text"></div>
+      <br>
+      <form>
+          <p></p><input id="cajatextobuscar" type="text" name="ingreseCampoabuscar" placeholder="Escriba ID de Venta">
+          <input class="boton" type="button" value="Buscar" title="Genere una Búsqueda">
+          <br>
+          <br>
+          <label class="textolabel">C.C Cliente <input class="inputTexto" placeholder="Ingrese Cedula Cliente"  type="number" name="cajatextocedulacliente" > </label>
+          
+          <label class="textolabelventa">Fecha de Venta <input class="textolabelventa" type="date" name="" > </label>
+          <br>
+          <label class="textolabel">C.C Vendedor <input class="inputTexto" placeholder="Ingrese Cedula Vendedor" type="number" name="cajatextocedulavendedor" > </label>
+          <br>
+          <label class="textolabel">Estado de Venta<input  class="inputTexto" list="listaEstadosVentas" name="cajatextoEstadoVenta" > </label>
+
+          <datalist id="listaEstadosVentas">
+                <option>En Proceso</option> 
+                <option>Entregada</option> 
+                <option>Cancelada</option> 
+        </datalist>
+      </form>
+      <!--<input class="disabledButton " type="button" value="Buscar" title="Genere una Búsqueda">-->     
+
+      <table class="EstilodeTabla">
+        <tr>
+          <th>Id Producto</th>
+          <th>Descripción </th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          
+        </tr>
+        <tr>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+        </tr>
+        <tr>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+        </tr>
+      </table>
+
+      <br>
+      <br>
+      <br>
+      <div Style="display: flex; justify-content: center">
+        <input class="boton" type="button" value="Actualizar" title="Ir al Formulario de Actualización">
+      </div>
+      
+  </section>
+  <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", ()=>{
+          sidebar.classList.toggle("open");
+          menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+              sidebar.classList.toggle("open");
+              menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if(sidebar.classList.contains("open")){
+              closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+              }
+            }
+  </script>
+</body>
+</html>
