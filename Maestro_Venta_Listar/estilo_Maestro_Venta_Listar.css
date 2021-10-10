@@ -263,50 +263,38 @@
 
 /*Seccion*/
 #cajatextobuscar{
- /* padding: 5px 5px 5px 5px; */
-  margin-left: 10px;
-  
+ padding: 5px 5px 5px 5px; 
 }
 
 .boton{
   background-color: rgba(170, 170, 207, 0.432);
   padding: 0px 5px 0px 5px; 
 }
-.boton:hover {
+.boton:hover{
   background-color: #4CAF50; /* Green */
   color: white;
 }
-
 .disabledButton {
   opacity: 0.6;
   cursor: not-allowed;
   float: right;
 }
-
 .textolabel{
   font-size: 0.9em;
   color: #000000;
   margin-left: 1em; 
 }
-
 .inputTexto{
   margin-left: 2em;
   margin-right: 3em; 
 }
 
-.textolabelventa{
-  float: right;
-  margin-right: 5em; 
-  margin-left: 2em;
-}
-
 .EstilodeTabla{
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 80%;
     position: relative;
     margin:auto;
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: 1em;
   }
   
@@ -319,11 +307,3 @@
 .EstilodeTabla tr:nth-child(even) {
     background-color: #dddddd;
 }
-
-#botonActualizar{
-  background-color: rgba(170, 170, 207, 0.432);
-  padding: 0px 5px 0px 5px;
-  position: relative;
-  margin:0 auto;
-}
-

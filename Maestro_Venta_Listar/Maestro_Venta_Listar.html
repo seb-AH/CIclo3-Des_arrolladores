@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu-->
-    <link rel="stylesheet" href="estilo_Maestro_Venta.css">
+    <link rel="stylesheet" href="estilo_Maestro_Venta_Listar.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 
   <header id="TituloPagina">
     <div>
-        <h1 id="tituloMaestroVenta" title="Interfaz Maestro Ventas">Maestro de Ventas</h1>
+        <h1 id="tituloMaestroVenta" title="Interfaz Maestro Ventas_Listar">Maestro de Ventas</h1>
     </div>
    </header>
 
@@ -79,64 +79,49 @@
   </section>
 
   <section class="home-section">
-      <div class="text"></div>
-      <br>
-      <form>
-          <p></p><input id="cajatextobuscar" type="text" name="ingreseCampoabuscar" placeholder="Escriba ID de Venta">
-          <input class="boton" type="button" value="Buscar" title="Genere una Búsqueda">
-          <br>
-          <br>
-          <label class="textolabel">C.C Cliente <input class="inputTexto" placeholder="Ingrese Cedula Cliente"  type="number" name="cajatextocedulacliente" > </label>
-          
-          <label class="textolabelventa">Fecha de Venta <input class="textolabelventa" type="date" name="" > </label>
-          <br>
-          <label class="textolabel">C.C Vendedor <input class="inputTexto" placeholder="Ingrese Cedula Vendedor" type="number" name="cajatextocedulavendedor" > </label>
-          <br>
-          <label class="textolabel">Estado de Venta<input  class="inputTexto" list="listaEstadosVentas" name="cajatextoEstadoVenta" > </label>
-
-          <datalist id="listaEstadosVentas">
-                <option>En Proceso</option> 
-                <option>Entregada</option> 
-                <option>Cancelada</option> 
-        </datalist>
-      </form>
+    <br>
+    <br>
+      <div style="float: right; margin-right: 10em;">
+        <form>
+          <input id="cajatextobuscar" type="text" name="ingreseCampoabuscar" placeholder="Escriba ID de Venta">
+           <input class="boton" type="button" value="Buscar" title="Genere una Búsqueda">
+           <br>
+       </form>
+      </div>
+      <br>   
       <!--<input class="disabledButton " type="button" value="Buscar" title="Genere una Búsqueda">-->     
+      <br>
+
+      <div style="text-align: center"><h2>Listado de Ventas</h2></div>
 
       <table class="EstilodeTabla">
         <tr>
-          <th>Id Producto</th>
-          <th>Descripción </th>
-          <th>Precio</th>
-          <th>Cantidad</th>
+          <th>Id Venta</th>
+          <th>Fecha</th>
+          <th>Valor Venta</th>
+          <th>Id Vendedor</th>
+          <th>Id Cliente</th>
         </tr>
         <tr>
-          <td>Prueba</td>
-          <td>Prueba</td>
-          <td>Prueba</td>
-          <td>Prueba</td>
-          
-        </tr>
-        <tr>
-          <td>Prueba</td>
+          <td><a style="color:#0004ff; text-decoration: none"  title="Clic para Actualizar Venta" href="">PruebaIDVenta </a></td>          <td>Prueba</td>
           <td>Prueba</td>
           <td>Prueba</td>
           <td>Prueba</td>
         </tr>
         <tr>
+          <td><a style="color:#0004ff; text-decoration: none"  title="Clic para Actualizar Venta" href="">PruebaIDVenta </a></td>
           <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+          <td>Prueba</td>
+        </tr>
+        <tr>
+          <td><a style="color:#0004ff; text-decoration: none"  title="Clic para Actualizar Venta" href="">PruebaIDVenta </a></td>          <td>Prueba</td>
           <td>Prueba</td>
           <td>Prueba</td>
           <td>Prueba</td>
         </tr>
       </table>
-
-      <br>
-      <br>
-      <br>
-      <div Style="display: flex; justify-content: center">
-        <input class="boton" type="button" value="Actualizar" title="Ir al Formulario de Actualización">
-      </div>
-      
   </section>
   <script>
         let sidebar = document.querySelector(".sidebar");
