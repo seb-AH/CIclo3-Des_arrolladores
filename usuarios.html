@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/gridusu.css">
+</head>
+
+<body>
+
+    <section class="grid-container"> 
+    <section class="titulo-principal">
+        <div class="titulo-modulo">
+            <h3>MODULO USUARIOS</h3>
+        </div>  
+    </section>
+    
+   <section class="permisos-usuarios">
+       <div class="container-permisos">
+           <h4>PERMISOS USUARIOS</h4>
+           <form class="forma">
+               <select>
+                   <option value="1">Administrador</option>
+                   <option value="2">Vendedor</option>                  
+               </select>
+           </form>
+           
+           <form class="check-box">
+              <input type="checkbox" name="#" id="1">
+              <label for="1"> Acceso módulo productos</label><br>
+              <input type="checkbox" name="#" id="2">
+              <label for="2"> Acceso maestro de productos</label><br>
+              <input type="checkbox" name="#" id="3">
+              <label for="3"> Acceso módulo de ventas</label><br>
+              <input type="checkbox" name="#" id="4">
+              <label for="4"> Acceso maestro de ventas</label><br>
+              <input type="checkbox" name="#" id="5">
+              <label for="5"> Acceso registro de usuarios</label><br>
+              <input type="checkbox" name="#" id="6">
+              <label for="6"> Acceso modificación de usuarios</label><br>
+          </form>
+
+        </div>
+   </section>
+
+   <section class="edicion-usuarios">
+       <h4>SOLICITUDES DE USUARIOS</h4>
+       
+       <h5 class="titulo-ingreso">Solicitudes de ingreso</h5>
+       <table>
+         <tr>
+           <th>Información</th>
+           <th>ID</th>
+           <th>Estado</th>
+           <th>Asignar rol</th>
+         </tr>
+         <tr>
+           <td>jmarti1a2@gmail.com</td>
+           <td>15789564</td>
+           <td>
+            <form class="forma2">
+              <select>
+                  <option value="1">pendiente</option>
+                  <option value="2">autorizado</option>
+                  <option value="3">no autorizado</option>                  
+              </select>
+          </form>
+            </td>
+           <td>
+            <form class="forma2">
+              <select>
+                  <option value="1">Administrador</option>
+                  <option value="2">Vendedor</option>
+                                    
+              </select>
+          </form>
+           </td>
+         </tr>
+         <tr>
+          <td>jmarti1a2@gmail.com</td>
+          <td>15789564</td>
+          <td>
+            <form class="forma2">
+            <select>
+                <option value="1">pendiente</option>
+                <option value="2">autorizado</option>
+                <option value="3">no autorizado</option>                  
+            </select>
+        </form>
+      </td>
+          <td>
+            <form class="forma2">
+              <select>
+                  <option value="1">Administrador</option>
+                  <option value="2">Vendedor</option>
+                                    
+              </select>
+          </form>
+          </td>
+        </tr>
+        <tr>
+          <td>jmarti1a2@gmail.com</td>
+          <td>15789564</td>
+          <td>
+            <form class="forma2">
+            <select>
+                <option value="1">pendiente</option>
+                <option value="2">autorizado</option>
+                <option value="3">no autorizado</option>                  
+            </select>
+       
+          <td>
+            <form class="forma2">
+              <select>
+                  <option value="1">Administrador</option>
+                  <option value="2">Vendedor</option>
+                                    
+              </select>
+          </form>
+          </td>
+        </tr>
+       </table>
+       <h5 class="titulo-usuario">Listado de Usuarios</h5> 
+       <table>
+        <tr>
+          <th>Información</th>
+          <th>ID</th>
+          <th>Rol</th>
+        </tr>
+        <tr>
+          <td>jhonhanckoock@gmail.com</td>
+          <td>11235687</td>
+          <td>Vendedor</td>
+        </tr>
+        <tr>
+         <td>pepito@gmail.com</td>
+         <td>459984456</td>
+         <td>Administrador</td>
+       </tr>
+       <tr>
+         <td>spiderman@gmail.com</td>
+         <td>56788345</td>
+         <td>Vendedor</td>
+       </tr>
+      </table> 
+   </section>
+
+   <section class="footer">
+       <h4>este es el footer</h4>
+   </section>
+
+</section>
+
+<section title="MenuHamburguesa">
+
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bxs-home'></i>
+          <div class="logo_name">Inicio</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+           <input type="text" placeholder="Buscar">
+           <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxl-shopify' ></i>
+            <span class="links_name">Maestro Productos</span>
+          </a>
+           <span class="tooltip">Maestro Productos</span>
+        </li>
+        <li>
+         <a href="#">
+          <i class='bx bxs-store-alt' ></i>
+           <span class="links_name">Maestro Ventas</span>
+         </a>
+         <span class="tooltip">Maestro Ventas</span>
+       </li>
+       <li>
+        <a href="#">
+          <i class='bx bxs-basket'></i>
+          <span class="links_name">Registrar Venta</span>
+        </a>
+        <span class="tooltip">Registrar Venta</span>
+      </li>
+       <li>
+         <a href="#">
+          <i class='bx bxs-user-detail'></i>
+           <span class="links_name">Gestion de Usuarios</span>
+         </a>
+         <span class="tooltip">Gestion de Usuarios</span>
+       </li>
+      
+       <li class="profile">
+           <div class="profile-details">
+             <img src="profile.jpg" alt="profileImg">
+             <div class="name_job">
+               <div class="name">Des-Arrolladores</div>
+               <div class="job">MisionTIC</div>
+             </div>
+           </div>
+           <i class='bx bx-log-out' id="log_out" ></i>
+       </li>
+      </ul>
+    </div>
+  
+</section>
+
+<script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();//calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+          sidebar.classList.toggle("open");
+          menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        } else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+          }
+        }
+    </script>
+
+</body>
+
+
+
+</html>
