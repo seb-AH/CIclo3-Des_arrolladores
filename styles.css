@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+
+.grid-container > * {
+    
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bloque1{
+    grid-area: bloque1;
+    background-color: seashell;
+}
+
+.bloque2 {
+    grid-area: bloque2;
+    background-color: seashell;
+}
+
+.bloque3  {
+    grid-area: bloque3;
+    background-color: seashell;
+}
+
+.bloque4  {
+    grid-area: bloque4;
+    background-color: seashell;
+}
+
+.grid-container{
+    display: grid;/*esto convierte a grid*/
+     /*esto le da separacion*/
+    grid-template-areas: 
+    "bloque1"
+    "bloque2"
+    "bloque3"
+    "bloque4";
+    grid-template: 
+    "bloque1 bloque2" 100px /*asi se le da altura a la seccion*/
+    "bloque3 bloque4"380px/
+    350px auto;
+    
+    /*
+    "footer footer" 112px/ /*asi se le da altura, ancho y alineacion de columnas*/
+      /*  auto auto;*/
+    
+}
+
+
+.titulo {
+    color: rgb(0, 47, 255);
+    text-align: auto;
+    font-size: auto;
+    margin:auto;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-bottom: auto;
+    font-style: 'poppins', sans-serif;
+}
+
+.sesion {
+    padding: 1rem;
+    background-color: dodgerblue;
+    font-size:larger;
+    /* negrilla */
+    font-weight: 500;
+    border-radius: 10px;
+    position:relative;
+    margin: auto;
+    margin-top: auto;
+    margin-left: auto;
+
+}
+
+.sesion:hover {
+    background-color: rgb(129, 156, 231);
+}
+
+
+img {
+    justify-content: space-around;
+    width: 30rem; 
+    position: left; 
+    margin-right: 20rem;
+    margin-bottom: auto;
+}
+
+.texto {
+    margin-top: 4rem;
+    margin-left: .5rem;
+    text-align: center;
+    line-height: auto;
+    border:0px;
+    font-style: 'poppins', sans-serif;
+    position: relative;    
+}
+
+.input {
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: .5rem;
+    margin: .3rem;
+    width: 14.2rem;
+}
+
+
+.mi-boton {
+    position: relative;
+    padding: 1.2rem;
+    background-color: cyan;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 1%;
+    border-width: 0px;
+    width: 14.2rem;
+}
+
+.mi-boton:hover {
+    background-color: rgb(147, 221, 221);
+}
+
